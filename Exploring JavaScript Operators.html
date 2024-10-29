@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <div id="output"></div>
+
+  <script>
+    // Task 1: Declare variables
+    let num1;
+    let num2;
+
+    // Task 2: Assign values
+    num1 = 10;
+    num2 = 5;
+
+    // Task 3: Perform arithmetic operations
+    document.getElementById("output").innerHTML += "<p>Sum: " + (num1 + num2) + "</p>";
+    document.getElementById("output").innerHTML += "<p>Difference: " + (num1 - num2) + "</p>";
+    document.getElementById("output").innerHTML += "<p>Product: " + (num1 * num2) + "</p>";
+    document.getElementById("output").innerHTML += "<p>Quotient: " + (num1 / num2) + "</p>";
+
+    // Task 4: Explore assignment operators
+    num1 += 5; // num1 = num1 + 5
+    num2 -= 3; // num2 = num2 - 3
+    document.getElementById("output").innerHTML += "<p>Updated num1: " + num1 + "</p>";
+    document.getElementById("output").innerHTML += "<p>Updated num2: " + num2 + "</p>";
+
+    // Task 5: Use comparison operators
+    document.getElementById("output").innerHTML += "<p>Is num1 equal to num2? " + (num1 === num2) + "</p>";
+    document.getElementById("output").innerHTML += "<p>Is num1 greater than num2? " + (num1 > num2) + "</p>";
+    document.getElementById("output").innerHTML += "<p>Is num1 not equal to num2? " + (num1 !== num2) + "</p>";
+
+    // Task 6: Apply logical operators
+    let isPositive = num1 > 0 && num2 > 0;
+    let isEven = num1 % 2 === 0 || num2 % 2 === 0;
+    document.getElementById("output").innerHTML += "<p>Are both numbers positive? " + isPositive + "</p>";
+    document.getElementById("output").innerHTML += "<p>Is at least one number even? " + isEven + "</p>";
+  </script>
+</body>
+</html>
